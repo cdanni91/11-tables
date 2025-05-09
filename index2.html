@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table id="accessible-table">
+        <caption>An example of an accessible table</caption>
+        <!-- head -->
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Occupation</th>
+          </tr>
+        </thead>
+        <!-- body -->
+        <tbody>
+          <tr>
+            <td>Anna Smith</td>
+            <td>28</td>
+            <td>Software Engineer</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>35</td>
+            <td>Data Scientist</td>
+          </tr>
+          <tr>
+            <td>Emily Brown</td>
+            <td>24</td>
+            <td>Web Developer</td>
+          </tr>
+        </tbody>
+        <!-- footer -->
+        <tfoot>
+          <tr>
+            <td colspan="3">Source: Example Data</td>
+          </tr>
+        </tfoot>
+      </table>
+      
+      <br>
+
+      <table id="irregular-table">
+        <caption>Table with Irregular Structure</caption>
+        <!-- head -->
+        <thead>
+            <tr>
+                <th scope="col">Header 1</th>
+                <th scope="col">Header 2</th>
+                <th scope="col">Header 3</th>
+                <th scope="col">Header 4</th>
+            </tr>
+        </thead>
+        <!-- body -->
+        <tbody>
+            <tr>
+                <th scope="row">Row 1, Header 1</th>
+                <td>Row 1, Data 2</td>
+                <td>Row 1, Data 3</td>
+                <td>Row 1, Data 4</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Row 2/3, Header 1</th>
+                <td>Row 2, Data 2</td>
+                <td>Row 2, Data 3</td>
+                <td>Row 2, Data 4</td>
+            </tr>
+            <tr>
+                <td colspan="2">Row 3, Data 2 and 3</td>
+                <td>Row 3, Data 4</td>
+            </tr>
+             <tr>
+                <th scope="row">Row 4, Header 1</th>
+                <td colspan="3">Row 4, Data 2, 3 and 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table id="colgroup-table">
+        <caption>Table with colgroup</caption>
+
+        <colgroup>
+          <col span="2" style="background-color:#D8D8D8">
+          <col style="background-color:#E8E8E8">
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Occupation</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Anna Smith</td>
+            <td>28</td>
+            <td>Software Engineer</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>35</td>
+            <td>Data Scientist</td>
+          </tr>
+          <tr>
+            <td>Emily Brown</td>
+            <td>24</td>
+            <td>Web Developer</td>
+          </tr>
+        </tbody>
+        
+      </table>
+
+
+<script src="./javascript.js"></script>
+</body>
+</html>
